@@ -8,7 +8,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//builder.Services.ConfigureNpgsqlContext(builder.Configuration);
+//builder.Services.ConfigureNpgsqlContext(builder.Configuration); postgres
 builder.Services.ConfigureUseInMemoryDatabase();
 
 builder.Services.ConfigureRepositories();
