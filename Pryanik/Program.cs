@@ -8,8 +8,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.ConfigureNpgsqlContext(builder.Configuration);
-//builder.Services.ConfigureUseInMemoryDatabase();
+//builder.Services.ConfigureNpgsqlContext(builder.Configuration);
+builder.Services.ConfigureUseInMemoryDatabase();
 
 builder.Services.ConfigureRepositories();
 builder.Services.ConfigureServices();
